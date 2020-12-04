@@ -1,0 +1,21 @@
+Typeid,So2,No2,Pm10,Co,O3_8,Pm25,Receptor,Wind_direction,Wind_speed,Humidity,Temperature,Year,Engine_family,Manufacturer,Engine_code,Engine_model,City,Latitude,Longitude,State,Date
+32,23.44,533,64.34,15,12.9027,324.34,Barry,1,300,23.5,78.5,2020,Rawhide Energy Station,Northside,Kincaid Generating Station,Dallman,Fairhope,30.497478,87.880258,Alabama,2020
+2,388,675,417,452,685,271,Barry,45,500,43,45,2019,Ray D Nixon,Sem,Marion,Dallman,Fairhope,30.497478,87.880258,Alabama,2019
+4,1,3,528,734,678,380,Charles R Lowman,23,678,54,545,2018,Bridgeport Harbor Station,Seminole,Marion,Duck Creek,Fairhope,30.497478,87.880258,Alabama,2018
+7,257,456,836,342,678,377,Charles R Lowman,12,343,25,45,2017,Indian River,Bow,Newton,E D Edwards,Fairhope,30.497478,87.880258,Alabama,2017
+23,643,720,415,647,685,45,Barry,36,300,23,78,2020,Rawhide Energy Station,Northside,Kincaid Generating Station,Dallman,Baton Rouge,30.497478,87.880258,Alabama,2020
+8,388,345,417,976,685,323,Barry,45,500,43,45,2019,Ray D Nixon,Sem,Marion,Dallman,Baton Rouge,30.497478,87.880258,Alabama,2019
+5,1,3,528,656,678,54,Charles R Lowman,23,678,54,545,2018,Bridgeport Harbor Station,Seminole,Marion,Duck Creek,Baton Rouge,30.497478,87.880258,Alabama,2018
+8,257,956,836,345,678,666,Charles R Lowman,12,343,25,45,2017,Indian River,Bow,Newton,E D Edwards,Baton Rouge,30.497478,87.880258,Alabama,2017
+58,734,720,415,754,685,56,Barry,36,300,23,78,2020,Rawhide Energy Station,Northside,Kincaid Generating Station,Dallman,Bay City,30.497478,87.880258,Alabama,2020
+5,388,453,417,163,685,54,Barry,45,500,43,45,2019,Ray D Nixon,Sem,Marion,Dallman,Bay City,30.497478,87.880258,Alabama,2019
+7,1,3,528,236,678,3,Charles R Lowman,23,678,54,545,2018,Bridgeport Harbor Station,Seminole,Marion,Duck Creek,Bay City,30.497478,87.880258,Alabama,2018
+8,257,234,836,467,678,4,Charles R Lowman,12,343,25,45,2017,Indian River,Bow,Newton,E D Edwards,Bay City,30.497478,87.880258,Alabama,2017
+68,757,720,415,342.53,685,54,Barry,36,300,23,78,2020,Rawhide Energy Station,Northside,Kincaid Generating Station,Dallman,Corpus Christi,30.497478,87.880258,Alabama,2020
+53,388,647,417,235,685,345,Barry,45,500,43,45,2019,Ray D Nixon,Sem,Marion,Dallman,Corpus Christi,30.497478,87.880258,Alabama,2019
+534,1,3,528,547,678,67,Charles R Lowman,23,678,54,545,2018,Bridgeport Harbor Station,Seminole,Marion,Duck Creek,Corpus Christi,30.497478,87.880258,Alabama,2018
+45,257,234,836,547,678,6,Charles R Lowman,12,343,25,45,2017,Indian River,Bow,Newton,E D Edwards,Corpus Christi,30.497478,87.880258,Alabama,2017
+5,976,720,415,555,685,86,Barry,36,300,23,78,2020,Rawhide Energy Station,Northside,Kincaid Generating Station,Dallman,Decatur,30.497478,87.880258,Alabama,2020
+35,388,753,417,478,685,55,Barry,45,500,43,45,2019,Ray D Nixon,Sem,Marion,Dallman,Decatur,30.497478,87.880258,Alabama,2019
+55,1,3,528,865,678,34,Charles R Lowman,23,678,54,545,2018,Bridgeport Harbor Station,Seminole,Marion,Duck Creek,Decatur,30.497478,87.880258,Alabama,2018
+4,257,734,836,475,678,99,Charles R Lowman,12,343,25,45,2017,Indian River,Bow,Newton,E D Edwards,Decatur,30.497478,87.880258,Alabama,2017

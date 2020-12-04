@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h4>Select a city and a time range, see the highest levels of different pollutants (CO, CO2, PM2.5, PM10, NO, etc,). </h4>
+
+<form action="" id="plotone" method="POST" enctype="multipart/form-data" class="my-5 ">
+    {% csrf_token %}
+    <select class="city-multiple" name="city">
+        {% for city in citydata %}
+            <option value="{{city.name}}">{{city.name}}</option>
+        {% endfor %}
+    </select>
+    <div class="my-4"></div>
+    <select class="year-multiple" name="year">
+        {% for year in yeardata %}
+            <option value="{{year}}">{{year}}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="my-4 w-100">Select</button>
+</form>
+{% if multibarchart %}
+<img src="./media/multibarchart.png" />
+{% endif %}
+
+<script>
+    $(document).ready(function() {
+        $('.city-multiple').select2({ width: '100%', placeholder: "Select a City", allowClear: true });
+        $('.year-multiple').select2({ width: '100%', placeholder: "Select an Year", allowClear: true });
+    });
+</script>
+{% endblock %}

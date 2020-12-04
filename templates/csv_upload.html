@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if messages %}
+{% for message in messages %}
+<div>
+    <strong>{{message|safe}}</strong>
+</div>
+{% endfor %}
+{% else %}
+<h4 class="my-4">Order of the Data should be</h4> {{pollution_data}}
+
+
+<form action="" method="POST" id="upload" enctype="multipart/form-data" class="my-5">
+    {% csrf_token %}
+    <label for="file1"> Please upload a recent data</label>
+    <input type="file" id="file1" name="file">
+    <button type="submit" class="my-4 w-50">Upload</button>
+</form>
+
+<h4 class="my-4">{{success}}</h4>
+<h4 class="my-4">{{fail}}</h4>
+
+
+{% endif %}
+
+{% endblock %}

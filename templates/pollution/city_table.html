@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="city-data">
+  <h1>Cities</h1>
+
+
+
+  <div class="city-data">
+
+    <!-- Header -->
+    <div class="city-data-header">
+
+      <!-- Search -->
+      <form class="searchbar" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <!-- Table -->
+
+    <div class="city-data-table">
+          {% if city_data %}
+      <table class="table">
+        <thead>
+          <tr>
+            {% for label in labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in city_data %}
+          <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.name }}</td>
+            <td>{{ row.latitude }}</td>
+            <td>{{ row.longitude }}</td>
+            <td>{{ row.state }}</td>
+            
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+          {% else %}
+            <p>No data to display.</p>
+          {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

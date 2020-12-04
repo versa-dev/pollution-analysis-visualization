@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="pollution-data">
+  <h1>Pollution Data</h1>
+
+
+
+  <div class="pollution-data">
+
+    <!-- Header -->
+    <div class="pollution-data-header">
+
+      <!-- Search -->
+      <form class="searchbar" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <!-- Table -->
+
+    <div class="pollution-data-table">
+          {% if pollution_data %}
+      <table class="table">
+        <thead>
+          <tr>
+            {% for label in labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in pollution_data %}
+          <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.typeid }}</td>
+            <td>{{ row.so2 }}</td>
+            <td>{{ row.no2 }}</td>
+            <td>{{ row.pm10 }}</td>
+            <td>{{ row.co }}</td>
+            <td>{{ row.o3_8 }}</td>
+            <td>{{ row.pm25 }}</td>
+            <td>{{ row.receptor }}</td>
+            <td>{{ row.wind_direction }}</td>
+            <td>{{ row.wind_speed }}</td>
+            <td>{{ row.humidity }}</td>
+            <td>{{ row.temperature }}</td>
+            <td>{{ row.date }}</td>
+            <td>{{ row.city }}</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+          {% else %}
+            <p>No data to display.</p>
+          {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}

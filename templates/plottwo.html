@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% if plottwo %}
+<h4>Select a city and see a pie chart of different pollution concentrations (CO, CO2, PM2.5, PM10, NO, etc,) according to the percentages. </h4>
+{% endif %}
+{% if plotthree %}
+<h4>Select a city and see the hourly concentration of PM2.5 (or other pollutants) in one day</h4>
+{% endif %}
+{% if plotfour %}
+<h4>Select a city and see the box plot of concentration of PM2.5 (or other pollutants)  with several years. </h4>
+{% endif %}
+{% if plotsix %}
+<h4>Select a city and see the emission of PM 2.5 by different types.  </h4>
+{% endif %}
+{% if plotsseven %}
+<h4>Select a city and seethe relationship between the wind direction and the concentration of PM2.5 in a city. </h4>
+{% endif %}
+<form action="" id="plottwo" method="POST" enctype="multipart/form-data" class="my-5 ">
+    {% csrf_token %}
+    <select class="citydata" name="currentcity">
+        {% for city in citydata %}
+            <option value="{{city.name}}">{{city.name}}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" class="my-4 w-100">Select</button>
+</form>
+{% if piechart %}
+<img src="./media/piechart.png" />
+{% endif %}
+
+{% if graphchart %}
+<img src="./media/graphchart.png" />
+{% endif %}
+
+{% if boxchart %}
+<img src="./media/boxchart.png" />
+{% endif %}
+
+{% if multiboxchart %}
+<img src="./media/multiboxchart.png" />
+{% endif %}
+
+{% if dotchart %}
+<img src="./media/dotchart.png" />
+{% endif %}
+<script>
+    $(document).ready(function() {
+        $('.citydata').select2({ width: '100%', placeholder: "Select an Option", allowClear: true });
+    });
+</script>
+{% endblock %}

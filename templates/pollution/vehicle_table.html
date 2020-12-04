@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section id="vehicle-data">
+  <h1>Vehicles</h1>
+
+
+
+  <div class="vehicle-data">
+
+    <!-- Header -->
+    <div class="vehicle-data-header">
+
+      <!-- Search -->
+      <form class="searchbar" method="GET">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+
+    </div>
+
+    <!-- Table -->
+
+    <div class="vehicle-data-table">
+          {% if vehicle_data %}
+      <table class="table">
+        <thead>
+          <tr>
+            {% for label in labels %}
+            <th>{{ label }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% for row in vehicle_data %}
+          <tr>
+            <td>{{ row.id }}</td>
+            <td>{{ row.engine_family }}</td>
+            <td>{{ row.manufacturer }}</td>
+            <td>{{ row.engine_code }}</td>
+            <td>{{ row.engine_model }}</td>
+            
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+          {% else %}
+            <p>No data to display.</p>
+          {% endif %}
+    </div>
+  </div>
+</section>
+{% endblock %}
